@@ -20,7 +20,7 @@ async def join(client, invite_link):
         return "Too many requests, try again later."
     except Exception as e:
         print(e)
-        return "Could not join, try joining manually."
+        return "Could not join Send Invite Link Firstly, try joining manually."
     
 #Regex---------------------------------------------------------------------------------------------------------------
 #to get the url from event
