@@ -26,7 +26,7 @@ async def check(userbot, client, link):
         except ValueError:
             return False, "**Invalid Link!**"
         except Exception:
-            return False, "Have you joined the channel?"
+            return False, "FIRST SEND INVITE LINK- Have you joined the channel?"
     else:
         try:
             chat = str(link.split("/")[-2])
