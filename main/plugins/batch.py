@@ -75,22 +75,22 @@ async def _batch(event):
             
 async def run_batch(userbot, client, sender, link, _range):
     for i in range(_range):
-        timer = 60
+        timer = 0
         if i < 25:
-            timer = 5
+            timer = 0
         if i < 50 and i > 25:
-            timer = 10
+            timer = 0
         if i < 1000000 and i > 50:
-            timer = 15
+            timer = 0
         if not 't.me/c/' in link:
             if i < 25:
-                timer = 2
+                timer = 0
             else:
-                timer = 3
+                timer = 0
         try:
             await get_bulk_msg(userbot, client, sender, link, i) 
         except FloodWait as fw:
-            await asyncio.sleep(fw.seconds + 5)
+            await asyncio.sleep(fw.seconds + 0)
             await get_bulk_msg(userbot, client, sender, link, i)
         protection = await client.send_message(sender, f"Sleeping for `{timer}` seconds to avoid Floodwaits and Protect account!")
         time.sleep(timer)
