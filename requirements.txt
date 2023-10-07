@@ -1,9 +1,73 @@
 #Github.com-Vasusen-code
 
-Telethon-v1.24.0
-ethon-1.3.8
-cryptg
-tgcrypto
-pyrogram
-python-decouple
+-----> Building on the Heroku-20 stack
+-----> Using buildpacks:
+       1. heroku/python
+       2. https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git
+-----> Python app detected
+-----> No Python version was specified. Using the buildpack default: python-3.10.4
+       To use a different version, see: https://devcenter.heroku.com/articles/python-runtimes
+-----> Installing python-3.10.4
+-----> Installing pip 22.0.4, setuptools 60.10.0 and wheel 0.37.1
+-----> Installing SQLite3
+-----> Installing requirements with pip
+       Collecting ethon
+         Downloading ethon-1.3.8-py3-none-any.whl (21 kB)
+       Collecting python-decouple
+         Downloading python_decouple-3.6-py3-none-any.whl (9.9 kB)
+       Collecting pyrogram
+         Downloading Pyrogram-2.0.24-py3-none-any.whl (3.2 MB)
+       Collecting telethon
+         Downloading Telethon-1.24.0-py3-none-any.whl (528 kB)
+       Collecting tgcrypto
+         Downloading TgCrypto-1.2.3-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (59 kB)
+       Collecting requests
+         Downloading requests-2.27.1-py2.py3-none-any.whl (63 kB)
+       Collecting opencv-python-headless
+         Downloading opencv_python_headless-4.5.5.64-cp36-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (47.8 MB)
+       Collecting pysocks==1.7.1
+         Downloading PySocks-1.7.1-py3-none-any.whl (16 kB)
+       Collecting pyaes==1.6.1
+         Downloading pyaes-1.6.1.tar.gz (28 kB)
+         Preparing metadata (setup.py): started
+         Preparing metadata (setup.py): finished with status 'done'
+       Collecting rsa
+         Downloading rsa-4.8-py3-none-any.whl (39 kB)
+       Collecting numpy>=1.21.2
+         Downloading numpy-1.22.3-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (16.8 MB)
+       Collecting idna<4,>=2.5
+         Downloading idna-3.3-py3-none-any.whl (61 kB)
+       Collecting urllib3<1.27,>=1.21.1
+         Downloading urllib3-1.26.9-py2.py3-none-any.whl (138 kB)
+       Collecting certifi>=2017.4.17
+         Downloading certifi-2022.5.18-py3-none-any.whl (155 kB)
+       Collecting charset-normalizer~=2.0.0
+         Downloading charset_normalizer-2.0.12-py3-none-any.whl (39 kB)
+       Collecting pyasn1>=0.1.3
+         Downloading pyasn1-0.4.8-py2.py3-none-any.whl (77 kB)
+       Building wheels for collected packages: pyaes
+         Building wheel for pyaes (setup.py): started
+         Building wheel for pyaes (setup.py): finished with status 'done'
+         Created wheel for pyaes: filename=pyaes-1.6.1-py3-none-any.whl size=26363 sha256=38a349140a405b6b55d58b3448feb35eb16889cdbaa19f3477782f7cb8b42dfd
+         Stored in directory: /tmp/pip-ephem-wheel-cache-xkk5312l/wheels/d6/84/5f/ea6aef85a93c7e1922486369874f4740a5642d261e09c59140
+       Successfully built pyaes
+       Installing collected packages: python-decouple, pyasn1, pyaes, urllib3, tgcrypto, rsa, pysocks, numpy, idna, charset-normalizer, certifi, telethon, requests, pyrogram, opencv-python-headless, ethon
+       Successfully installed certifi-2022.5.18 charset-normalizer-2.0.12 ethon-1.3.8 idna-3.3 numpy-1.22.3 opencv-python-headless-4.5.5.64 pyaes-1.6.1 pyasn1-0.4.8 pyrogram-2.0.24 pysocks-1.7.1 python-decouple-3.6 requests-2.27.1 rsa-4.8 telethon-1.24.0 tgcrypto-1.2.3 urllib3-1.26.9
+-----> ffmpeg app detected
+
+-----> Installing ffmpeg
+       Variable FFMPEG_DOWNLOAD_URL isn't set, using default value
+       Downloading https://johnvansickle.com/ffmpeg/builds/ffmpeg-git-amd64-static.tar.xz
+       Unpacking the archive
+       Installation successful
+-----> Discovering process types
+       Procfile declares types -> Drone
+
+-----> Compressing...
+        Done: 185M
+-----> Launching...
+       Released v7
+       https://save2345678.herokuapp.com/ deployed to Heroku
+
+ 
 
